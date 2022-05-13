@@ -16,18 +16,9 @@ import 'amfe-flexible'
 
 // 加载所有的路由
 import router from './router'
-
-// 引入地图
-import VueAMap from 'vue-amap';
-Vue.use(VueAMap);
-VueAMap.initAMapApiLoader({
-        //申请地址 https://lbs.amap.com/ 选择web端jsAPI
-        key: '9f1f02036f41128724854b3dfbb2e1cf',
-        // 插件集合，用到什么插件就使用什么插件
-        plugin: ['AMap.Autocomplete', 'AMap.PlaceSearch', 'AMap.Scale', 'AMap.OverView', 'AMap.ToolBar', 'AMap.MapType', 'AMap.PolyEditor', 'AMap.CircleEditor'],
-        v: '1.4.4', // 高德sdk版本，最新的sdk已经出到了2.0
-        //官网解释：JSAPI 2.0 提供的开发接口与 1.4 版本达到 99%的兼容度，但是为了保证插件的稳定性我们还是选择1.4.4。
-    })
+window._AMapSecurityConfig = {
+        securityJsCode: '52284b7ddb0603575ece27ae05a08378' // 输入你的jscode
+    }
     // 阻止启动生产消息
 Vue.config.productionTip = false
 

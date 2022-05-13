@@ -16,11 +16,11 @@
       <!-- <van-tabbar-item icon="home-o">首页</van-tabbar-item> -->
       <van-tabbar-item to="/qa">
         <i slot="icon" class="mobilett mobilett-wenda"></i>
-        <span>问答</span>
+        <span>地图</span>
       </van-tabbar-item>
       <van-tabbar-item to="/video">
         <i slot="icon" class="mobilett mobilett-shipin"></i>
-        <span>视频</span>
+        <span>地图</span>
       </van-tabbar-item>
       <van-tabbar-item to="/my">
         <i slot="icon" class="mobilett mobilett-wode"></i>

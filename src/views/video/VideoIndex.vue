@@ -1,22 +1,32 @@
 <template>
-  <div class="video-container">视频</div>
+  <div class="video-container">
+    <!-- <map-container></map-container> -->
+    <!-- <MapContainer></MapContainer> -->
+    <mapContainer></mapContainer>
+  </div>
 </template>
 
 <script>
+import mapContainer from '@/components/MapContainer.vue';
 export default {
-  name: "VideoPage",
-  components: {},
+  components: { mapContainer },
   props: {},
   data() {
     return {};
   },
   computed: {},
   watch: {},
-  created() {},
-  mounted() {},
+  created() { },
+  mounted() { },
   methods: {},
 };
 </script>
 
-<style>
+<style scoped>
+.video-container {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
 </style>

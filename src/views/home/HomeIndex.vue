@@ -3,15 +3,8 @@
     <!-- 导航栏 -->
     <van-nav-bar class="page-nav-bar">
       <!-- slot="title" 是van-nav-bar的自定义插槽，用来自定义标题文字，这里就是插入了button按钮搜索框 -->
-      <van-button
-        class="search-btn"
-        slot="title"
-        type="info"
-        size="small"
-        round
-        icon="search"
-        >搜索</van-button
-      >
+      <van-button class="search-btn" slot="title" type="info" size="small" round icon="search">搜索
+      </van-button>
     </van-nav-bar>
     <!-- /导航栏 -->
 
@@ -22,11 +15,7 @@
     <van-tabs class="channel-tabs" v-model="active" animated swipeable>
       <!-- v-for="channel in channels" 用来遍历渲染频道 -->
       <!-- 同时在频道列表中把文章列表遍历出来 -->
-      <van-tab
-        v-for="channel in channels"
-        :key="channel.id"
-        :title="channel.name"
-      >
+      <van-tab v-for="channel in channels" :key="channel.id" :title="channel.name">
         <!-- 文章列表组件，直接引入 -->
         <!-- :channel="channel" 把频道对象传递给文章列表组件  -->
         <!-- 这是父传子的组件通信，注意：组件名称就是引入组件的变量名称 -->
