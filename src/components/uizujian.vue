@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import AMapLoader from '@amap/amap-jsapi-loader';
+import AMapLoader from "@amap/amap-jsapi-loader";
 export default {
   mounted() {
     //DOM初始化完成进行地图初始化
@@ -11,13 +11,13 @@ export default {
   },
   methods: {
     initUi() {
-      AMapUI.loadUI(['overlay/SimpleMarker'], function (SimpleMarker) {
+      AMapUI.loadUI(["overlay/SimpleMarker"], function (SimpleMarker) {
         //启动页面
         initPage(SimpleMarker);
       });
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style>

@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import mapContainer from '@/components/MapContainer.vue';
+import mapContainer from "@/components/MapContainer.vue";
 export default {
   components: { mapContainer },
   props: {},
@@ -16,8 +16,8 @@ export default {
   },
   computed: {},
   watch: {},
-  created() { },
-  mounted() { },
+  created() {},
+  mounted() {},
   methods: {},
 };
 </script>

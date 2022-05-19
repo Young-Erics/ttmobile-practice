@@ -16,6 +16,7 @@ import 'amfe-flexible'
 
 // 加载所有的路由
 import router from './router'
+
 window._AMapSecurityConfig = {
         securityJsCode: '52284b7ddb0603575ece27ae05a08378' // 输入你的jscode
     }

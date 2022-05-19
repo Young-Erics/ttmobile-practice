@@ -15,5 +15,10 @@
       "dom.iterable",
       "scripthost"
     ]
-  }
+  },
+   // 禁用template的报错提示,和export default 的波浪线报错提示
+   "vueCompilerOptions": {
+    "experimentalDisableTemplateSupport": true,
+    "experimentalShamefullySupportOptionsApi": false
+  },
 }
